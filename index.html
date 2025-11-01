@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <section class="form">
+        <h1>Todo List</h1>
+
+        <div class="input-data">
+            <form>
+                <input type="text" id="task-input" placeholder="Add a todo . . .">
+                <input type="date" id="due-date" placeholder="mm/dd/yyyy">
+            </form>
+            <button class="add" id="add-btn">+</button>
+        </div>
+
+        <ul class="options">
+            <li>
+                <select id="filter-select">
+                    <option value="all">ALL</option>
+                    <option value="completed">COMPLETED</option>
+                    <option value="pending">PENDING</option>
+                </select>
+            </li>
+            <li>
+                <button class="delete-all" id="delete-all-btn">DELETE ALL</button>
+            </li>
+        </ul>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>TASK</th>
+                    <th>DUE DATE</th>
+                    <th>STATUS</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody id="todo-list">
+                <tr>
+                    <td colspan="4" class="no-task">No task found</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
